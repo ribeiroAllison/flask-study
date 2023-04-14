@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <body>
+{% extends "base.html" %}
+
+{% block content %}
     <a href="/">Back To Recipe List</a>
 
     <h1>{{ template_recipe | title }}</h1>
@@ -25,5 +25,5 @@
       <p>{{key}}:{{instruction}}</p>
     {% endfor %}
     </ol>
-  </body>
-</html>
+
+{% endblock %}
