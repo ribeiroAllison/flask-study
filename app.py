@@ -11,5 +11,6 @@ def index():
 def recipe(id):
   return render_template("recipe.html", 
                         template_recipe=recipes[id], 
-                        template_ingredients=ingredients[id], 
+                        template_ingredients=ingredients[id],
+                        template_description=descriptions[id],
                         template_instructions=instructions[id])
