@@ -13,4 +13,7 @@ def index():
 def recipe(id):
     
   #### Return a rendered fried_egg.html file
-  return render_template('fried_egg.html')
+  return render_template('recipe.html',
+                        template_recipe = recipes[id],
+                        template_description=descriptions[id],
+                        template_ingredients=ingredients[id])
